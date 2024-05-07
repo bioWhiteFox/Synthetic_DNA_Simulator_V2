@@ -270,9 +270,9 @@ def create_tsv_file_metatdata():
     added symbols.
     The second column is the name of the population
     """
-    row_htt_NCBI_header = [['sample', 'pop'],
+    row_htt_NCBI_header = [['sample', 'population'],
                            ['NC000004.123074681-3243960',
-                            'NC000004.123074681-3243960']]
+                            'NC000004.12_3074681-3243960']]
     with open('populations.tsv', 'w', newline='') as csvfile:
         csvwriter = csv.writer(csvfile, delimiter='\t')
         csvwriter.writerows(row_htt_NCBI_header)
